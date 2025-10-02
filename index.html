@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rompecabezas Creativo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>🧩 Rompecabezas Creativo</h1>
+
+  <div class="controls">
+    <label for="difficulty">Dificultad:</label>
+    <select id="difficulty">
+      <option value="3">Fácil (3x3)</option>
+      <option value="4" selected>Medio (4x4)</option>
+      <option value="5">Difícil (5x5)</option>
+    </select>
+    <button id="restart">Reiniciar</button>
+  </div>
+
+  <div id="puzzle-container"></div>
+  <div id="message"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #f0f0f0, #e0e0ff);
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+#puzzle-container {
+  margin: 0 auto;
+  display: grid;
+  gap: 2px;
+  border: 2px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+.piece {
+  background-image: url('puzzle.jpg');
+  background-size: cover;
+  border: 1px solid #999;
+  cursor: grab;
+  transition: transform 0.2s ease;
+}
+
+.piece:active {
+  transform: scale(1.05);
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 20px;
+  color: green;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
